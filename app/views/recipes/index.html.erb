@@ -1,0 +1,7 @@
+<h1>Welcome to the most awesome recipes of the web!</h1>
+
+<ul>
+  <% @recipes.each do |recipe| %>
+    <li><%= recipe.name %></li>
+  <% end %>
+</ul>
