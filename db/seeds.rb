@@ -13,7 +13,7 @@ puts "Creating recipes..."
     name: Faker::Food.dish,
     description: Faker::Food.description,
     difficulty: difficulty.sample.to_s
-    user_id: 1,
+    user_id: 1
     )
   recipe.save
   puts "Creating #{recipe.name}"
