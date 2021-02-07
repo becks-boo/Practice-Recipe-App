@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+difficulty = ["very easy", "easy", "moderate", "expert"]
+
+puts "Destroying recipes..."
+
+Recipe.destroy_all
+
+puts "Creating recipes..."
+
+10.times do
+  recipe = Recipe.new(
+    name: Faker::Food.dish,
+    description: Faker::Food.description,
+    difficulty: difficulty.sample.to_s
+    )
