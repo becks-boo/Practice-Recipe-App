@@ -59,3 +59,4 @@ gem 'font-awesome-sass', '~> 5.12.0'
 
 gem 'pg'
 gem 'devise'
+gem 'faker'
